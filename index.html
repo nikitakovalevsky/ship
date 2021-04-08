@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>PortComfort</title>
+      <meta charset="utf8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+      <link rel="stylesheet" href="css/animate.css">
+      <link rel="stylesheet" href="css/forms.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <div class="s-panel hidden">
+         <div class="form">
+            <div class="logo"></div>
+            <div class="s-panel-button">
+               <button></button>
+            </div>
+            <form class="port-form" id="port-form">
+               <fieldset>
+                  <section>
+                     <label class="select">
+                        <select id="selectPort">
+                           <option value="" selected>All Ports</option>
+                           <ul class="">
+                              <option disabled>BELGIUM</option>
+                              <ul class="">
+                                 <option value="zeebrugge" >Zeebrugge</option>
+                              </ul>
+                              <option disabled>DENMARK</option>
+                              <ul class="">
+                                 <option value="copenhagen" >Copenhagen</option>
+                              </ul>
+                              <option disabled>ESTONIA</option>
+                              <ul class="">
+                                 <option value="tallinn" >Tallinn</option>
+                              </ul>
+                              <option disabled>FINLAND</option>
+                              <ul class="">
+                                 <option value="helsinki" >Helsinki</option>
+                              </ul>
+                              <option disabled>FRANCE</option>
+                              <ul class="">
+                                 <option value="le-havre" >Le Havre</option>
+                                 <option value="marseille" >Marseille</option>
+                              </ul>
+                              <option disabled>GERMANY</option>
+                              <ul class="">
+                                 <option value="hamburg" >Hamburg</option>
+                                 <option value="kiel" >Kiel</option>
+                                 <option value="travemunde" >Travemunde</option>
+                                 <option value="warnemunde" >Warnemunde</option>
+                              </ul>
+                              <option disabled>LITUANIA</option>
+                              <ul class="">
+                                 <option value="klaipeda" >Klaipeda</option>
+                              </ul>
+                              <option disabled>NETHERLANDS</option>
+                              <ul class="">
+                                 <option value="amsterdam" >Amsterdam</option>
+                                 <option value="rotterdam" >Rotterdam</option>
+                              </ul>
+                              <option disabled>NORWAY</option>
+                              <ul class="">
+                                 <option value="bergen" >Bergen</option>
+                                 <option value="geiranger" >Geiranger / Hellesylt</option>
+                                 <option value="oslo" >Oslo</option>
+                              </ul>
+                              <option disabled>PORTUGAL</option>
+                              <ul class="">
+                                 <option value="funchal" >Funchal</option>
+                                 <option value="lisbon" >Lisbon</option>
+                              </ul>
+                              <option disabled>RUSSIA</option>
+                              <ul class="">
+                                 <option value="st-petersburg" >Saint-Petersburg</option>
+                              </ul>
+                              <option disabled>SPAIN</option>
+                              <ul class="">
+                                 <option value="barselona" >Barselona</option>
+                                 <option value="cadiz" >Cadiz</option>
+                                 <option value="palma-de-mallorca" >Palma de Mallorca</option>
+                              </ul>
+                              <option disabled>SWEDEN</option>
+                              <ul class="">
+                                 <option value="malmo" >Malmö</option>
+                                 <option value="stockholm" >Stockholm</option>
+                                 <option value="visby" >Visby</option>
+                              </ul>
+                              <option disabled>UNITED KINGDOM</option>
+                              <ul class="">
+                                 <option value="dover" >Dover</option>
+                                 <option value="london" >London</option>
+                                 <option value="southampton" >Southampton</option>
+                              </ul>
+                           </ul>
+                        </select>
+                        <i></i>
+                     </label>
+                  </section>
+                  <section>
+                     <label class="select">
+                        <select name="ship">
+                           <option value="" selected>All Ships</option>
+                           <option value="1">Adonia</option>
+                           <option value="2">Adventure of the Seas</option>
+                           <option value="273">Aegean Odyssey</option>
+                           <option value="3">AIDAaura</option>
+                           <option value="4">AIDAbella</option>
+                           <option value="204">AIDAblu</option>
+                           <option value="5">AIDAcara</option>
+                           <option value="6">AIDAdiva</option>
+                           <option value="178">AIDAluna</option>
+                           <option value="7">AIDAmar</option>
+                           <option value="202">AIDAperla</option>
+                           <option value="200">AIDAprima</option>
+                           <option value="190">AIDAsol</option>
+                           <option value="203">AIDAstella</option>
+                           <option value="8">AIDAvita</option>
+                           <option value="9">Albatros</option>
+                           <option value="10">Amadea</option>
+                           <option value="291">Amerigo Vespucci</option>
+                           <option value="161">Amorella</option>
+                           <option value="260">Amsterdam</option>
+                           <option value="292">Anthem of the Seas</option>
+                           <option value="12">Artania</option>
+                           <option value="13">Astor</option>
+                           <option value="14">Astoria</option>
+                           <option value="16">Azamara Journey</option>
+                           <option value="17">Azamara Quest</option>
+                           <option value="19">Balmoral</option>
+                           <option value="169">Baltic Princess</option>
+                           <option value="131">Baltic Queen</option>
+                           <option value="171">Bergensfjord</option>
+                           <option value="20">Berlin</option>
+                           <option value="147">Birka Stockholm</option>
+                           <option value="21">Black Watch</option>
+                           <option value="150">Botnia Seaways</option>
+                           <option value="22">Boudicca</option>
+                           <option value="23">Braemar</option>
+                           <option value="238">Bremen</option>
+                           <option value="24">Brilliance Of The Seas</option>
+                           <option value="26">Caribbean Princess</option>
+                           <option value="27">Carnival Legend</option>
+                           <option value="214">Celebrity Beyond</option>
+                           <option value="28">Celebrity Constellation</option>
+                           <option value="29">Celebrity Eclipse</option>
+                           <option value="212">Celebrity Edge</option>
+                           <option value="213">Celebrity Equinox</option>
+                           <option value="211">Celebrity Infinity</option>
+                           <option value="210">Celebrity Millennium</option>
+                           <option value="215">Celebrity Reflection</option>
+                           <option value="30">Celebrity Silhouette</option>
+                           <option value="175">Clio</option>
+                           <option value="265">Club Med 2</option>
+                           <option value="247">Color Fantasy</option>
+                           <option value="245">Color Line</option>
+                           <option value="164">Color Magic</option>
+                           <option value="188">Columbus</option>
+                           <option value="31">Columbus 2</option>
+                           <option value="32">Corinthian</option>
+                           <option value="207">Costa Deliziosa</option>
+                           <option value="208">Costa Diadema</option>
+                           <option value="209">Costa Fascinosa</option>
+                           <option value="33">Costa Favolosa</option>
+                           <option value="34">Costa Fortuna</option>
+                           <option value="35">Costa Luminosa</option>
+                           <option value="192">Costa Magica</option>
+                           <option value="185">Costa Mediterranea</option>
+                           <option value="205">Costa neoClassica</option>
+                           <option value="206">Costa neoRiviera</option>
+                           <option value="36">Costa neoRomantica</option>
+                           <option value="37">Costa Pacifica</option>
+                           <option value="38">Crown Princess</option>
+                           <option value="149">Crown Seaways</option>
+                           <option value="39">Crystal Serenity</option>
+                           <option value="40">Crystal Symphony</option>
+                           <option value="92">Cunard Queen Elizabeth</option>
+                           <option value="93">Cunard Queen Mary 2</option>
+                           <option value="94">Cunard Queen Victoria</option>
+                           <option value="198">Deutschland</option>
+                           <option value="246">DFDS Seaways</option>
+                           <option value="42">Disney Magic</option>
+                           <option value="43">Emerald Princess</option>
+                           <option value="44">Empress</option>
+                           <option value="45">Eurodam</option>
+                           <option value="46">Europa</option>
+                           <option value="47">Europa 2</option>
+                           <option value="241">Expedition</option>
+                           <option value="285">Express</option>
+                           <option value="137">Finlandia</option>
+                           <option value="154">Finnclipper</option>
+                           <option value="166">Finneagle</option>
+                           <option value="160">Finnfellow</option>
+                           <option value="136">Finnlady</option>
+                           <option value="140">Finnmaid</option>
+                           <option value="151">Finnpartner</option>
+                           <option value="139">Finnstar</option>
+                           <option value="162">Finntrader</option>
+                           <option value="48">Fram</option>
+                           <option value="268">Freedom of the Seas</option>
+                           <option value="135">Gabriella</option>
+                           <option value="159">Galaxy</option>
+                           <option value="252">Gotladia ll</option>
+                           <option value="168">Gotland</option>
+                           <option value="253">Gotlandia</option>
+                           <option value="49">Grand Mistral</option>
+                           <option value="50">Grand Princess</option>
+                           <option value="51">Hamburg</option>
+                           <option value="237">Hanseatic</option>
+                           <option value="278">Hebridean Sky</option>
+                           <option value="234">Horizon</option>
+                           <option value="180">Independence of The Seas</option>
+                           <option value="52">Insignia</option>
+                           <option value="145">Isabelle</option>
+                           <option value="53">Island Sky</option>
+                           <option value="54">Jewel of the Seas</option>
+                           <option value="125">Karolin</option>
+                           <option value="55">Koningsdam</option>
+                           <option value="56">L'Austral</option>
+                           <option value="282">La Belle de Cadix</option>
+                           <option value="57">Le Boreal</option>
+                           <option value="199">Le Laperouse</option>
+                           <option value="279">Le Lyrial</option>
+                           <option value="277">Le Ponant</option>
+                           <option value="176">Le Soleal</option>
+                           <option value="58">Legend of the Seas</option>
+                           <option value="167">Leonora Christina</option>
+                           <option value="157">Liverpool Seaways</option>
+                           <option value="59">Louis Aura</option>
+                           <option value="60">Magellan</option>
+                           <option value="270">Majestic Princess</option>
+                           <option value="134">Marcella </option>
+                           <option value="61">Marco Polo</option>
+                           <option value="138">Mariella</option>
+                           <option value="62">Marina</option>
+                           <option value="287">MARLIN</option>
+                           <option value="248">Megastar</option>
+                           <option value="63">Mein Schiff 1</option>
+                           <option value="64">Mein Schiff 2</option>
+                           <option value="183">Mein Schiff 3</option>
+                           <option value="65">Mein Schiff 4</option>
+                           <option value="66">Mein Schiff 5</option>
+                           <option value="181">Mein Schiff 6</option>
+                           <option value="130">Merilin </option>
+                           <option value="194">Midnatsol</option>
+                           <option value="67">Minerva</option>
+                           <option value="68">Monarch</option>
+                           <option value="69">MS Deutschland</option>
+                           <option value="70">MS Europa</option>
+                           <option value="71">MS Europa 2</option>
+                           <option value="227">MSC Armonia</option>
+                           <option value="228">MSC Bellissima</option>
+                           <option value="229">MSC Divina</option>
+                           <option value="174">MSC Fantasia</option>
+                           <option value="72">MSC Lirica</option>
+                           <option value="73">MSC Magnifica</option>
+                           <option value="235">MSC Meraviglia</option>
+                           <option value="74">MSC Musica</option>
+                           <option value="75">MSC Opera</option>
+                           <option value="76">MSC Orchestra</option>
+                           <option value="77">MSC Poesia</option>
+                           <option value="196">MSC Preziosa</option>
+                           <option value="231">MSC Seaside</option>
+                           <option value="230">MSC Seaview</option>
+                           <option value="78">MSC Sinfonia</option>
+                           <option value="193">MSC Splendida</option>
+                           <option value="172">National Geographic Orion</option>
+                           <option value="79">Nautica</option>
+                           <option value="80">Navigator of the Seas</option>
+                           <option value="153">Nordlink</option>
+                           <option value="236">Nordstjernen</option>
+                           <option value="226">Norwegian Bliss</option>
+                           <option value="225">Norwegian Breakaway</option>
+                           <option value="224">Norwegian Dawn</option>
+                           <option value="221">Norwegian Epic</option>
+                           <option value="222">Norwegian Escape</option>
+                           <option value="223">Norwegian Gem</option>
+                           <option value="177">Norwegian Getaway</option>
+                           <option value="186">Norwegian Jade</option>
+                           <option value="201">Norwegian Joy</option>
+                           <option value="256">Norwegian Spirit</option>
+                           <option value="81">Norwegian Star</option>
+                           <option value="82">Ocean Countess</option>
+                           <option value="83">Ocean Dream</option>
+                           <option value="288">Ocean Endeavour</option>
+                           <option value="84">Ocean Majesty</option>
+                           <option value="261">Ocean Nova</option>
+                           <option value="85">Ocean Princess</option>
+                           <option value="86">Oceania Marina</option>
+                           <option value="255">Oceania Nautica</option>
+                           <option value="258">Oceania Riviera</option>
+                           <option value="275">Oceania Sirena</option>
+                           <option value="11">P&O Arcadia</option>
+                           <option value="15">P&O Aurora</option>
+                           <option value="18">P&O Azura</option>
+                           <option value="25">P&O Britannia</option>
+                           <option value="195">P&O Oceana</option>
+                           <option value="87">P&O Oriana</option>
+                           <option value="191">P&O Ventura</option>
+                           <option value="182">Pacific Pearl</option>
+                           <option value="88">Pacific Princess</option>
+                           <option value="290">Panorama</option>
+                           <option value="289">Panorama ll</option>
+                           <option value="254">Patria Seaways</option>
+                           <option value="152">Pearl Seaways</option>
+                           <option value="89">Princess Danae</option>
+                           <option value="90">Princess Daphne</option>
+                           <option value="91">Prinsendam</option>
+                           <option value="95">Quest for Adventure</option>
+                           <option value="96">Regal Princess</option>
+                           <option value="148">Regal Star</option>
+                           <option value="269">Rhapsody of the Seas</option>
+                           <option value="141">Romantika</option>
+                           <option value="158">Rosella</option>
+                           <option value="97">Rotterdam</option>
+                           <option value="276">Royal Clipper</option>
+                           <option value="98">Royal Princess</option>
+                           <option value="99">Ryndam</option>
+                           <option value="100">Saga Pearl ll</option>
+                           <option value="101">Saga Ruby</option>
+                           <option value="102">Saga Sapphire</option>
+                           <option value="286">Sailor</option>
+                           <option value="163">Scottish Viking</option>
+                           <option value="197">Sea Adventurer</option>
+                           <option value="103">Sea Cloud II</option>
+                           <option value="240">Sea Endurance</option>
+                           <option value="104">Sea Princess</option>
+                           <option value="143">Sea Wind</option>
+                           <option value="220">Seabourn Encore</option>
+                           <option value="105">Seabourn Legend</option>
+                           <option value="218">Seabourn Odyssey</option>
+                           <option value="219">Seabourn Ovation</option>
+                           <option value="106">Seabourn Pride</option>
+                           <option value="107">Seabourn Quest</option>
+                           <option value="108">Seabourn Sojourn</option>
+                           <option value="109">SeaDream 1</option>
+                           <option value="217">SeaDream II</option>
+                           <option value="110">Serenade of the Seas</option>
+                           <option value="184">Serenissima</option>
+                           <option value="179">Seven Seas Explorer</option>
+                           <option value="216">Seven Seas Mariner</option>
+                           <option value="189">Seven Seas Navigator</option>
+                           <option value="111">Seven Seas Voyager</option>
+                           <option value="244">Silja Europa</option>
+                           <option value="133">Silja Serenade</option>
+                           <option value="132">Silja Symphony</option>
+                           <option value="112">Silver Cloud</option>
+                           <option value="239">Silver Explorer</option>
+                           <option value="257">Silver Muse</option>
+                           <option value="262">Silver Spirit</option>
+                           <option value="113">Silver Whisper</option>
+                           <option value="114">Silver Wind</option>
+                           <option value="233">Sovereign</option>
+                           <option value="129">Star</option>
+                           <option value="271">Star Breeze</option>
+                           <option value="242">Star Legend</option>
+                           <option value="243">Star Pride</option>
+                           <option value="170">Stavangerfjord</option>
+                           <option value="156">Stena Flavia</option>
+                           <option value="283">STS Lord Nelson</option>
+                           <option value="284">STS Tenacious</option>
+                           <option value="249">Superfast lX</option>
+                           <option value="251">Superfast Vll</option>
+                           <option value="250">Superfast Vlll</option>
+                           <option value="128">Superstar</option>
+                           <option value="259">Tanit</option>
+                           <option value="115">The World</option>
+                           <option value="187">Thomson Celebration</option>
+                           <option value="267">Thomson Dream</option>
+                           <option value="266">Thomson Majesty</option>
+                           <option value="116">Thomson Spirit</option>
+                           <option value="41">TUI Discovery</option>
+                           <option value="272">TUI Discovery 2</option>
+                           <option value="280">Variety Voyager</option>
+                           <option value="281">Veendam</option>
+                           <option value="142">Victoria l</option>
+                           <option value="146">Viking Cinderella</option>
+                           <option value="155">Viking Grace</option>
+                           <option value="117">Viking Sea</option>
+                           <option value="173">Viking Sky</option>
+                           <option value="118">Viking Star</option>
+                           <option value="126">Viking XPRS</option>
+                           <option value="165">Visby</option>
+                           <option value="119">Vision of the Seas</option>
+                           <option value="120">Voyager</option>
+                           <option value="144">Wawel</option>
+                           <option value="274">Westerdam</option>
+                           <option value="264">Wind Spirit</option>
+                           <option value="263">Wind Star</option>
+                           <option value="121">Wind Surf</option>
+                           <option value="232">Zenith</option>
+                           <option value="122">Zuiderdam</option>
+                        </select>
+                        <i></i>
+                     </label>
+                  </section>
+                  <label class="label">Arrival</label>
+                  <div class="row">
+                     <section class="col col-6" style="padding-right:8px">
+                        <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input type="text" name="start" id="start" value="">
+                        </label>
+                     </section>
+                     <section class="col col-6" style="padding-left:12px">
+                        <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input type="text" name="finish" id="finish">
+                        </label>
+                     </section>
+                  </div>
+               </fieldset>
+               <footer>
+                  <section>
+                     <button type="submit" class="button">Search</button>
+                  </section>
+               </footer>
+            </form>
+            <div class="short-form">
+               <header>
+                  <span>Home</span>
+               </header>
+               <fieldset>
+                  <div class="arrival">Arrival &nbsp;<span id="arrivalDates"></span></div>
+                  <div class="arrival">Ship &nbsp;&nbsp;&nbsp;&nbsp;<span id="shipName"></span></div>
+                  <div class="reset-search"><a href="javascript:void(0)" class="searchAgain">Reset</a></div>
+               </fieldset>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="menu">
+            <div class="wrapper">
+               <div class="menu_item menu_item1">
+                  <div class="svgimg svgimg1"></div>
+                  <ul>
+                     <li><a href="#">Find a quay</a></li>
+                     <li><a href="#">See arriving date and standing time</a></li>
+                     <li><a href="#">Ship entry’s history</a></li>
+                  </ul>
+               </div>
+               <div class="menu_item menu_item2 "><img src="img/svg/logo_blue.svg" alt=""></div>
+               <div class="menu_item menu_item3">
+                  <div class="svgimg svgimg2"></div>
+                  <ul>
+                     <li><a href="#">Ship’s path</a></li>
+                     <li><a href="#">Ship’s info</a></li>
+                     <li><a href="#">Terminal’s plans</a></li>
+                     <li><a href="#">Call a taxi</a></li>
+                     <li><a href="#">Rent a car</a></li>
+                  </ul>
+               </div>
+               <div class="menu_item menu_item4">
+                  <div class="svgimg svgimg3"></div>
+                  <ul>
+                     <li><a href="#">How does it work</a></li>
+                     <li><a href="#">Mail to us</a></li>
+                     <li><a href="#">Report about errors</a></li>
+                     <li><a href="#">Ad in PORTCOMFORT</a></li>
+                     <li><a href="#">Report about errors</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="find-berth">
+            <div class="wrapper">
+               <div class="bigtext">
+                  F
+                  <span>
+                     I
+                     <div class="swimmingship"></div>
+                  </span>
+                  ND
+               </div>
+            </div>
+         </div>
+         <div class="waves">
+            <div class="wrapper">
+            </div>
+         </div>
+         <div class="map">
+            <div class="wrapper">
+               <div class="bigtext">
+                  <span>
+                     SEE
+                     <div class="swimmingship2"></div>
+                  </span>
+               </div>
+               <div class="artext">
+                  <h2>ARRIVING DATE<br>AND STANDING TIME</h2>
+                  <p>Now you allways know when <br>and whitch quay your liner will arrive</p>
+                  <p>Ports and terminals play a vital role in the transportation of global trade and therefore for shipping companies it is important to know what a port can offer them in terms of facilities available for loading and unloading cargo, as well as what the vessel and its crew have available to them in terms of services.</p>
+                  <div class="artbutton"><a href="#">SELECT DATE</a></div>
+                  <div class="anchordecorate"></div>
+               </div>
+               <div class="searchsel">
+                  <div class="wrapper">
+                     <div class="artext">
+                        <h2 class="middletext">SEA<br>RCH</h2>
+                        <span class="middletext">SHIP ENTRY'S HISTORY</span>
+                     </div>
+                     <div class="artext">
+                        <p>Now you allways know when <br>and which quay your liner will arrive</p>
+                        <p>Ports and terminals play a vital role in the transportation of global trade and therefore for shipping companies it is important to know what a port can offer them in terms of facilities available for loading and unloading cargo, as well as what the vessel and its crew have available to them in terms of services.</p>
+                        <div class="artbutton"><a href="#">SELECT DATE</a></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="bigtext watchbig">
+                  <span>
+                     WATCH
+                     <div class="swimmingship3"></div>
+                  </span>
+               </div>
+            </div>
+            <div class="waves2">
+               <div class="wrapper">
+                  <div class="artext">
+                     <h2>SHIP’S<br>PATH</h2>
+                     <p>Now you allways know when <br>and whitch quay your liner will arrive</p>
+                     <p>Ports and terminals play a vital role in the transportation of global trade and therefore for shipping companies it is important to know what a port can offer them in terms of facilities available for loading and unloading cargo, as well as what the vessel and its crew have available to them in terms of services.</p>
+                  </div>
+                  <div class="artext">
+                     <h2>SHIP’S<br>INFO</h2>
+                     <p>Now you allways know when <br>and whitch quay your liner will arrive</p>
+                     <p>Ports and terminals play a vital role in the transportation of global trade and therefore for shipping companies it is important to know what a port can offer them in terms of facilities available for loading and unloading cargo, as well as what the vessel and its crew have available to them in terms of services.</p>
+                  </div>
+               </div>
+               <div class="selectship">
+                  <form class="port-form port-form2" id="port-form">
+                     <fieldset>
+                        <section>
+                           <label class="select">
+                              <i class="ifirst"></i>
+                              <select name="ship">
+                                 <option value="" selected>SELECT SHIP</option>
+                                 <option value="1">Adonia</option>
+                                 <option value="2">Adventure of the Seas</option>
+                                 <option value="273">Aegean Odyssey</option>
+                                 <option value="3">AIDAaura</option>
+                                 <option value="4">AIDAbella</option>
+                                 <option value="204">AIDAblu</option>
+                                 <option value="5">AIDAcara</option>
+                                 <option value="6">AIDAdiva</option>
+                                 <option value="178">AIDAluna</option>
+                                 <option value="7">AIDAmar</option>
+                                 <option value="202">AIDAperla</option>
+                                 <option value="200">AIDAprima</option>
+                                 <option value="190">AIDAsol</option>
+                                 <option value="203">AIDAstella</option>
+                                 <option value="8">AIDAvita</option>
+                                 <option value="9">Albatros</option>
+                                 <option value="10">Amadea</option>
+                                 <option value="291">Amerigo Vespucci</option>
+                                 <option value="161">Amorella</option>
+                                 <option value="260">Amsterdam</option>
+                                 <option value="292">Anthem of the Seas</option>
+                                 <option value="12">Artania</option>
+                                 <option value="13">Astor</option>
+                                 <option value="14">Astoria</option>
+                                 <option value="16">Azamara Journey</option>
+                                 <option value="17">Azamara Quest</option>
+                                 <option value="19">Balmoral</option>
+                                 <option value="169">Baltic Princess</option>
+                                 <option value="131">Baltic Queen</option>
+                                 <option value="171">Bergensfjord</option>
+                                 <option value="20">Berlin</option>
+                                 <option value="147">Birka Stockholm</option>
+                                 <option value="21">Black Watch</option>
+                                 <option value="150">Botnia Seaways</option>
+                                 <option value="22">Boudicca</option>
+                                 <option value="23">Braemar</option>
+                                 <option value="238">Bremen</option>
+                                 <option value="24">Brilliance Of The Seas</option>
+                                 <option value="26">Caribbean Princess</option>
+                                 <option value="27">Carnival Legend</option>
+                                 <option value="214">Celebrity Beyond</option>
+                                 <option value="28">Celebrity Constellation</option>
+                                 <option value="29">Celebrity Eclipse</option>
+                                 <option value="212">Celebrity Edge</option>
+                                 <option value="213">Celebrity Equinox</option>
+                                 <option value="211">Celebrity Infinity</option>
+                                 <option value="210">Celebrity Millennium</option>
+                                 <option value="215">Celebrity Reflection</option>
+                                 <option value="30">Celebrity Silhouette</option>
+                                 <option value="175">Clio</option>
+                                 <option value="265">Club Med 2</option>
+                                 <option value="247">Color Fantasy</option>
+                                 <option value="245">Color Line</option>
+                                 <option value="164">Color Magic</option>
+                                 <option value="188">Columbus</option>
+                                 <option value="31">Columbus 2</option>
+                                 <option value="32">Corinthian</option>
+                                 <option value="207">Costa Deliziosa</option>
+                                 <option value="208">Costa Diadema</option>
+                                 <option value="209">Costa Fascinosa</option>
+                                 <option value="33">Costa Favolosa</option>
+                                 <option value="34">Costa Fortuna</option>
+                                 <option value="35">Costa Luminosa</option>
+                                 <option value="192">Costa Magica</option>
+                                 <option value="185">Costa Mediterranea</option>
+                                 <option value="205">Costa neoClassica</option>
+                                 <option value="206">Costa neoRiviera</option>
+                                 <option value="36">Costa neoRomantica</option>
+                                 <option value="37">Costa Pacifica</option>
+                                 <option value="38">Crown Princess</option>
+                                 <option value="149">Crown Seaways</option>
+                                 <option value="39">Crystal Serenity</option>
+                                 <option value="40">Crystal Symphony</option>
+                                 <option value="92">Cunard Queen Elizabeth</option>
+                                 <option value="93">Cunard Queen Mary 2</option>
+                                 <option value="94">Cunard Queen Victoria</option>
+                                 <option value="198">Deutschland</option>
+                                 <option value="246">DFDS Seaways</option>
+                                 <option value="42">Disney Magic</option>
+                                 <option value="43">Emerald Princess</option>
+                                 <option value="44">Empress</option>
+                                 <option value="45">Eurodam</option>
+                                 <option value="46">Europa</option>
+                                 <option value="47">Europa 2</option>
+                                 <option value="241">Expedition</option>
+                                 <option value="285">Express</option>
+                                 <option value="137">Finlandia</option>
+                                 <option value="154">Finnclipper</option>
+                                 <option value="166">Finneagle</option>
+                                 <option value="160">Finnfellow</option>
+                                 <option value="136">Finnlady</option>
+                                 <option value="140">Finnmaid</option>
+                                 <option value="151">Finnpartner</option>
+                                 <option value="139">Finnstar</option>
+                                 <option value="162">Finntrader</option>
+                                 <option value="48">Fram</option>
+                                 <option value="268">Freedom of the Seas</option>
+                                 <option value="135">Gabriella</option>
+                                 <option value="159">Galaxy</option>
+                                 <option value="252">Gotladia ll</option>
+                                 <option value="168">Gotland</option>
+                                 <option value="253">Gotlandia</option>
+                                 <option value="49">Grand Mistral</option>
+                                 <option value="50">Grand Princess</option>
+                                 <option value="51">Hamburg</option>
+                                 <option value="237">Hanseatic</option>
+                                 <option value="278">Hebridean Sky</option>
+                                 <option value="234">Horizon</option>
+                                 <option value="180">Independence of The Seas</option>
+                                 <option value="52">Insignia</option>
+                                 <option value="145">Isabelle</option>
+                                 <option value="53">Island Sky</option>
+                                 <option value="54">Jewel of the Seas</option>
+                                 <option value="125">Karolin</option>
+                                 <option value="55">Koningsdam</option>
+                                 <option value="56">L'Austral</option>
+                                 <option value="282">La Belle de Cadix</option>
+                                 <option value="57">Le Boreal</option>
+                                 <option value="199">Le Laperouse</option>
+                                 <option value="279">Le Lyrial</option>
+                                 <option value="277">Le Ponant</option>
+                                 <option value="176">Le Soleal</option>
+                                 <option value="58">Legend of the Seas</option>
+                                 <option value="167">Leonora Christina</option>
+                                 <option value="157">Liverpool Seaways</option>
+                                 <option value="59">Louis Aura</option>
+                                 <option value="60">Magellan</option>
+                                 <option value="270">Majestic Princess</option>
+                                 <option value="134">Marcella </option>
+                                 <option value="61">Marco Polo</option>
+                                 <option value="138">Mariella</option>
+                                 <option value="62">Marina</option>
+                                 <option value="287">MARLIN</option>
+                                 <option value="248">Megastar</option>
+                                 <option value="63">Mein Schiff 1</option>
+                                 <option value="64">Mein Schiff 2</option>
+                                 <option value="183">Mein Schiff 3</option>
+                                 <option value="65">Mein Schiff 4</option>
+                                 <option value="66">Mein Schiff 5</option>
+                                 <option value="181">Mein Schiff 6</option>
+                                 <option value="130">Merilin </option>
+                                 <option value="194">Midnatsol</option>
+                                 <option value="67">Minerva</option>
+                                 <option value="68">Monarch</option>
+                                 <option value="69">MS Deutschland</option>
+                                 <option value="70">MS Europa</option>
+                                 <option value="71">MS Europa 2</option>
+                                 <option value="227">MSC Armonia</option>
+                                 <option value="228">MSC Bellissima</option>
+                                 <option value="229">MSC Divina</option>
+                                 <option value="174">MSC Fantasia</option>
+                                 <option value="72">MSC Lirica</option>
+                                 <option value="73">MSC Magnifica</option>
+                                 <option value="235">MSC Meraviglia</option>
+                                 <option value="74">MSC Musica</option>
+                                 <option value="75">MSC Opera</option>
+                                 <option value="76">MSC Orchestra</option>
+                                 <option value="77">MSC Poesia</option>
+                                 <option value="196">MSC Preziosa</option>
+                                 <option value="231">MSC Seaside</option>
+                                 <option value="230">MSC Seaview</option>
+                                 <option value="78">MSC Sinfonia</option>
+                                 <option value="193">MSC Splendida</option>
+                                 <option value="172">National Geographic Orion</option>
+                                 <option value="79">Nautica</option>
+                                 <option value="80">Navigator of the Seas</option>
+                                 <option value="153">Nordlink</option>
+                                 <option value="236">Nordstjernen</option>
+                                 <option value="226">Norwegian Bliss</option>
+                                 <option value="225">Norwegian Breakaway</option>
+                                 <option value="224">Norwegian Dawn</option>
+                                 <option value="221">Norwegian Epic</option>
+                                 <option value="222">Norwegian Escape</option>
+                                 <option value="223">Norwegian Gem</option>
+                                 <option value="177">Norwegian Getaway</option>
+                                 <option value="186">Norwegian Jade</option>
+                                 <option value="201">Norwegian Joy</option>
+                                 <option value="256">Norwegian Spirit</option>
+                                 <option value="81">Norwegian Star</option>
+                                 <option value="82">Ocean Countess</option>
+                                 <option value="83">Ocean Dream</option>
+                                 <option value="288">Ocean Endeavour</option>
+                                 <option value="84">Ocean Majesty</option>
+                                 <option value="261">Ocean Nova</option>
+                                 <option value="85">Ocean Princess</option>
+                                 <option value="86">Oceania Marina</option>
+                                 <option value="255">Oceania Nautica</option>
+                                 <option value="258">Oceania Riviera</option>
+                                 <option value="275">Oceania Sirena</option>
+                                 <option value="11">P&O Arcadia</option>
+                                 <option value="15">P&O Aurora</option>
+                                 <option value="18">P&O Azura</option>
+                                 <option value="25">P&O Britannia</option>
+                                 <option value="195">P&O Oceana</option>
+                                 <option value="87">P&O Oriana</option>
+                                 <option value="191">P&O Ventura</option>
+                                 <option value="182">Pacific Pearl</option>
+                                 <option value="88">Pacific Princess</option>
+                                 <option value="290">Panorama</option>
+                                 <option value="289">Panorama ll</option>
+                                 <option value="254">Patria Seaways</option>
+                                 <option value="152">Pearl Seaways</option>
+                                 <option value="89">Princess Danae</option>
+                                 <option value="90">Princess Daphne</option>
+                                 <option value="91">Prinsendam</option>
+                                 <option value="95">Quest for Adventure</option>
+                                 <option value="96">Regal Princess</option>
+                                 <option value="148">Regal Star</option>
+                                 <option value="269">Rhapsody of the Seas</option>
+                                 <option value="141">Romantika</option>
+                                 <option value="158">Rosella</option>
+                                 <option value="97">Rotterdam</option>
+                                 <option value="276">Royal Clipper</option>
+                                 <option value="98">Royal Princess</option>
+                                 <option value="99">Ryndam</option>
+                                 <option value="100">Saga Pearl ll</option>
+                                 <option value="101">Saga Ruby</option>
+                                 <option value="102">Saga Sapphire</option>
+                                 <option value="286">Sailor</option>
+                                 <option value="163">Scottish Viking</option>
+                                 <option value="197">Sea Adventurer</option>
+                                 <option value="103">Sea Cloud II</option>
+                                 <option value="240">Sea Endurance</option>
+                                 <option value="104">Sea Princess</option>
+                                 <option value="143">Sea Wind</option>
+                                 <option value="220">Seabourn Encore</option>
+                                 <option value="105">Seabourn Legend</option>
+                                 <option value="218">Seabourn Odyssey</option>
+                                 <option value="219">Seabourn Ovation</option>
+                                 <option value="106">Seabourn Pride</option>
+                                 <option value="107">Seabourn Quest</option>
+                                 <option value="108">Seabourn Sojourn</option>
+                                 <option value="109">SeaDream 1</option>
+                                 <option value="217">SeaDream II</option>
+                                 <option value="110">Serenade of the Seas</option>
+                                 <option value="184">Serenissima</option>
+                                 <option value="179">Seven Seas Explorer</option>
+                                 <option value="216">Seven Seas Mariner</option>
+                                 <option value="189">Seven Seas Navigator</option>
+                                 <option value="111">Seven Seas Voyager</option>
+                                 <option value="244">Silja Europa</option>
+                                 <option value="133">Silja Serenade</option>
+                                 <option value="132">Silja Symphony</option>
+                                 <option value="112">Silver Cloud</option>
+                                 <option value="239">Silver Explorer</option>
+                                 <option value="257">Silver Muse</option>
+                                 <option value="262">Silver Spirit</option>
+                                 <option value="113">Silver Whisper</option>
+                                 <option value="114">Silver Wind</option>
+                                 <option value="233">Sovereign</option>
+                                 <option value="129">Star</option>
+                                 <option value="271">Star Breeze</option>
+                                 <option value="242">Star Legend</option>
+                                 <option value="243">Star Pride</option>
+                                 <option value="170">Stavangerfjord</option>
+                                 <option value="156">Stena Flavia</option>
+                                 <option value="283">STS Lord Nelson</option>
+                                 <option value="284">STS Tenacious</option>
+                                 <option value="249">Superfast lX</option>
+                                 <option value="251">Superfast Vll</option>
+                                 <option value="250">Superfast Vlll</option>
+                                 <option value="128">Superstar</option>
+                                 <option value="259">Tanit</option>
+                                 <option value="115">The World</option>
+                                 <option value="187">Thomson Celebration</option>
+                                 <option value="267">Thomson Dream</option>
+                                 <option value="266">Thomson Majesty</option>
+                                 <option value="116">Thomson Spirit</option>
+                                 <option value="41">TUI Discovery</option>
+                                 <option value="272">TUI Discovery 2</option>
+                                 <option value="280">Variety Voyager</option>
+                                 <option value="281">Veendam</option>
+                                 <option value="142">Victoria l</option>
+                                 <option value="146">Viking Cinderella</option>
+                                 <option value="155">Viking Grace</option>
+                                 <option value="117">Viking Sea</option>
+                                 <option value="173">Viking Sky</option>
+                                 <option value="118">Viking Star</option>
+                                 <option value="126">Viking XPRS</option>
+                                 <option value="165">Visby</option>
+                                 <option value="119">Vision of the Seas</option>
+                                 <option value="120">Voyager</option>
+                                 <option value="144">Wawel</option>
+                                 <option value="274">Westerdam</option>
+                                 <option value="264">Wind Spirit</option>
+                                 <option value="263">Wind Star</option>
+                                 <option value="121">Wind Surf</option>
+                                 <option value="232">Zenith</option>
+                                 <option value="122">Zuiderdam</option>
+                              </select>
+                              <i></i>
+                           </label>
+                        </section>
+                     </fieldset>
+                     <footer>
+                        <section>
+                           <button type="submit" class="button">Search</button>
+                        </section>
+                     </footer>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="knowtaxi">
+            <div class="wrapper">
+               <div class="knowtext clearfix">
+                  <div class="bigtext">
+                     <span>
+                        KNOW
+                        <div class="flyingipad"></div>
+                     </span>
+                  </div>
+                  <div class="artext floatright artextcustom">
+                     <h2>TERMINAL’S<br>PLANS</h2>
+                     <p>Now you allways know when <br>and whitch quay your liner will arrive</p>
+                     <p>Ports and terminals play a vital role in the transportation of global trade and therefore for shipping companies it is important to know what a port can offer them in terms of facilities available for loading and unloading cargo, as well as what the vessel and its crew have available to them in terms of services.</p>
+                     <div class="artbutton"><a href="#">SELECT PORT</a></div>
+                  </div>
+               </div>
+               <div class="calltaxi">
+                  <div class="artext artextcustom">
+                     <h2 class="middletext">CALL</h2>
+                     <h2>A TAXI</h2>
+                     <p>Now you allways know when <br>and whitch quay your liner will arrive</p>
+                     <p>Ports and terminals play a vital role in the transportation of global trade and therefore for shipping companies it is important to know what a port can offer them in terms of facilities available for loading and unloading cargo, as well as what the vessel and its crew have available to them in terms of services.</p>
+                  </div>
+                  <div class="artext artextcustom">
+                     <h2 class="middletext">RENT</h2>
+                     <h2>A CAR</h2>
+                     <p>Now you allways know when <br>and whitch quay your liner will arrive</p>
+                     <p>Ports and terminals play a vital role in the transportation of global trade and therefore for shipping companies it is important to know what a port can offer them in terms of facilities available for loading and unloading cargo, as well as what the vessel and its crew have available to them in terms of services.</p>
+                     <div class="taxiphoto"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="selectship selectship2">
+               <form class="port-form port-form2" id="port-form">
+                  <fieldset>
+                     <section>
+                        <label class="select">
+                           <i class="ifirst"></i>
+                           <select id="selectPort">
+                              <option value="" selected>SELECT PORT</option>
+                              <ul class="">
+                                 <option disabled>BELGIUM</option>
+                                 <ul class="">
+                                    <option value="zeebrugge" >Zeebrugge</option>
+                                 </ul>
+                                 <option disabled>DENMARK</option>
+                                 <ul class="">
+                                    <option value="copenhagen" >Copenhagen</option>
+                                 </ul>
+                                 <option disabled>ESTONIA</option>
+                                 <ul class="">
+                                    <option value="tallinn" >Tallinn</option>
+                                 </ul>
+                                 <option disabled>FINLAND</option>
+                                 <ul class="">
+                                    <option value="helsinki" >Helsinki</option>
+                                 </ul>
+                                 <option disabled>FRANCE</option>
+                                 <ul class="">
+                                    <option value="le-havre" >Le Havre</option>
+                                    <option value="marseille" >Marseille</option>
+                                 </ul>
+                                 <option disabled>GERMANY</option>
+                                 <ul class="">
+                                    <option value="hamburg" >Hamburg</option>
+                                    <option value="kiel" >Kiel</option>
+                                    <option value="travemunde" >Travemunde</option>
+                                    <option value="warnemunde" >Warnemunde</option>
+                                 </ul>
+                                 <option disabled>LITUANIA</option>
+                                 <ul class="">
+                                    <option value="klaipeda" >Klaipeda</option>
+                                 </ul>
+                                 <option disabled>NETHERLANDS</option>
+                                 <ul class="">
+                                    <option value="amsterdam" >Amsterdam</option>
+                                    <option value="rotterdam" >Rotterdam</option>
+                                 </ul>
+                                 <option disabled>NORWAY</option>
+                                 <ul class="">
+                                    <option value="bergen" >Bergen</option>
+                                    <option value="geiranger" >Geiranger / Hellesylt</option>
+                                    <option value="oslo" >Oslo</option>
+                                 </ul>
+                                 <option disabled>PORTUGAL</option>
+                                 <ul class="">
+                                    <option value="funchal" >Funchal</option>
+                                    <option value="lisbon" >Lisbon</option>
+                                 </ul>
+                                 <option disabled>RUSSIA</option>
+                                 <ul class="">
+                                    <option value="st-petersburg" >Saint-Petersburg</option>
+                                 </ul>
+                                 <option disabled>SPAIN</option>
+                                 <ul class="">
+                                    <option value="barselona" >Barselona</option>
+                                    <option value="cadiz" >Cadiz</option>
+                                    <option value="palma-de-mallorca" >Palma de Mallorca</option>
+                                 </ul>
+                                 <option disabled>SWEDEN</option>
+                                 <ul class="">
+                                    <option value="malmo" >Malmö</option>
+                                    <option value="stockholm" >Stockholm</option>
+                                    <option value="visby" >Visby</option>
+                                 </ul>
+                                 <option disabled>UNITED KINGDOM</option>
+                                 <ul class="">
+                                    <option value="dover" >Dover</option>
+                                    <option value="london" >London</option>
+                                    <option value="southampton" >Southampton</option>
+                                 </ul>
+                              </ul>
+                           </select>
+                           <i></i>
+                        </label>
+                     </section>
+                  </fieldset>
+                  <footer>
+                     <section>
+                        <button type="submit" class="button">SEARCH TAXI</button>
+                     </section>
+                     <section>
+                        <button type="submit" class="button">SEARCH CAR RENTAL</button>
+                     </section>
+                  </footer>
+               </form>
+            </div>
+         </div>
+         <div class="howletsuseit">
+            <div class="wrapper">
+               <div class="doesitwork">
+                  DOES<br>IT WORK
+                  <div class="anchordecorate2"></div>
+               </div>
+               <div class="threeoptions">
+                  <div class="threeoptions_item item1">Вы заходите в меню слева и выбираете нужный вам порт или корабль, ну, или и то и другое.<br>Также вы можете выбрать интересующий вас отрезок времени. По умолчанию установлен весь текущий год.</div>
+                  <div class="threeoptions_item item2">Наша программа собирает информацию со всех портов, туроператоров <br>и круизных компаний и в течении доли секунды выясняет дату, время и место причала вашего судна.</div>
+                  <div class="threeoptions_item item3">Теперь вы можете без труда посмотреть время прибытия вашего судна, выяснить какие ещё корабли заходят в ваш порт и даже узнать всю историю заходов.</div>
+               </div>
+               <div class="arrival">
+                  <div class="arrival_item"></div>
+                  <div class="arrival_item">
+                     <form class="port-form" id="port-form">
+                        <fieldset>
+                           <section>
+                              <label class="select">
+                                 <select id="selectPort">
+                                    <option value="" selected>SELECT LINER</option>
+                                    <ul class="">
+                                       <option disabled>BELGIUM</option>
+                                       <ul class="">
+                                          <option value="zeebrugge" >Zeebrugge</option>
+                                       </ul>
+                                       <option disabled>DENMARK</option>
+                                       <ul class="">
+                                          <option value="copenhagen" >Copenhagen</option>
+                                       </ul>
+                                       <option disabled>ESTONIA</option>
+                                       <ul class="">
+                                          <option value="tallinn" >Tallinn</option>
+                                       </ul>
+                                       <option disabled>FINLAND</option>
+                                       <ul class="">
+                                          <option value="helsinki" >Helsinki</option>
+                                       </ul>
+                                       <option disabled>FRANCE</option>
+                                       <ul class="">
+                                          <option value="le-havre" >Le Havre</option>
+                                          <option value="marseille" >Marseille</option>
+                                       </ul>
+                                       <option disabled>GERMANY</option>
+                                       <ul class="">
+                                          <option value="hamburg" >Hamburg</option>
+                                          <option value="kiel" >Kiel</option>
+                                          <option value="travemunde" >Travemunde</option>
+                                          <option value="warnemunde" >Warnemunde</option>
+                                       </ul>
+                                       <option disabled>LITUANIA</option>
+                                       <ul class="">
+                                          <option value="klaipeda" >Klaipeda</option>
+                                       </ul>
+                                       <option disabled>NETHERLANDS</option>
+                                       <ul class="">
+                                          <option value="amsterdam" >Amsterdam</option>
+                                          <option value="rotterdam" >Rotterdam</option>
+                                       </ul>
+                                       <option disabled>NORWAY</option>
+                                       <ul class="">
+                                          <option value="bergen" >Bergen</option>
+                                          <option value="geiranger" >Geiranger / Hellesylt</option>
+                                          <option value="oslo" >Oslo</option>
+                                       </ul>
+                                       <option disabled>PORTUGAL</option>
+                                       <ul class="">
+                                          <option value="funchal" >Funchal</option>
+                                          <option value="lisbon" >Lisbon</option>
+                                       </ul>
+                                       <option disabled>RUSSIA</option>
+                                       <ul class="">
+                                          <option value="st-petersburg" >Saint-Petersburg</option>
+                                       </ul>
+                                       <option disabled>SPAIN</option>
+                                       <ul class="">
+                                          <option value="barselona" >Barselona</option>
+                                          <option value="cadiz" >Cadiz</option>
+                                          <option value="palma-de-mallorca" >Palma de Mallorca</option>
+                                       </ul>
+                                       <option disabled>SWEDEN</option>
+                                       <ul class="">
+                                          <option value="malmo" >Malmö</option>
+                                          <option value="stockholm" >Stockholm</option>
+                                          <option value="visby" >Visby</option>
+                                       </ul>
+                                       <option disabled>UNITED KINGDOM</option>
+                                       <ul class="">
+                                          <option value="dover" >Dover</option>
+                                          <option value="london" >London</option>
+                                          <option value="southampton" >Southampton</option>
+                                       </ul>
+                                    </ul>
+                                 </select>
+                                 <i></i>
+                              </label>
+                           </section>
+                           <section>
+                              <label class="select">
+                                 <select name="ship">
+                                    <option value="" selected>SELECT CITY</option>
+                                    <option value="1">Adonia</option>
+                                    <option value="2">Adventure of the Seas</option>
+                                    <option value="273">Aegean Odyssey</option>
+                                    <option value="3">AIDAaura</option>
+                                    <option value="4">AIDAbella</option>
+                                    <option value="204">AIDAblu</option>
+                                    <option value="5">AIDAcara</option>
+                                    <option value="6">AIDAdiva</option>
+                                    <option value="178">AIDAluna</option>
+                                    <option value="7">AIDAmar</option>
+                                    <option value="202">AIDAperla</option>
+                                    <option value="200">AIDAprima</option>
+                                    <option value="190">AIDAsol</option>
+                                    <option value="203">AIDAstella</option>
+                                    <option value="8">AIDAvita</option>
+                                    <option value="9">Albatros</option>
+                                    <option value="10">Amadea</option>
+                                    <option value="291">Amerigo Vespucci</option>
+                                    <option value="161">Amorella</option>
+                                    <option value="260">Amsterdam</option>
+                                    <option value="292">Anthem of the Seas</option>
+                                    <option value="12">Artania</option>
+                                    <option value="13">Astor</option>
+                                    <option value="14">Astoria</option>
+                                    <option value="16">Azamara Journey</option>
+                                    <option value="17">Azamara Quest</option>
+                                    <option value="19">Balmoral</option>
+                                    <option value="169">Baltic Princess</option>
+                                    <option value="131">Baltic Queen</option>
+                                    <option value="171">Bergensfjord</option>
+                                    <option value="20">Berlin</option>
+                                    <option value="147">Birka Stockholm</option>
+                                    <option value="21">Black Watch</option>
+                                    <option value="150">Botnia Seaways</option>
+                                    <option value="22">Boudicca</option>
+                                    <option value="23">Braemar</option>
+                                    <option value="238">Bremen</option>
+                                    <option value="24">Brilliance Of The Seas</option>
+                                    <option value="26">Caribbean Princess</option>
+                                    <option value="27">Carnival Legend</option>
+                                    <option value="214">Celebrity Beyond</option>
+                                    <option value="28">Celebrity Constellation</option>
+                                    <option value="29">Celebrity Eclipse</option>
+                                    <option value="212">Celebrity Edge</option>
+                                    <option value="213">Celebrity Equinox</option>
+                                    <option value="211">Celebrity Infinity</option>
+                                    <option value="210">Celebrity Millennium</option>
+                                    <option value="215">Celebrity Reflection</option>
+                                    <option value="30">Celebrity Silhouette</option>
+                                    <option value="175">Clio</option>
+                                    <option value="265">Club Med 2</option>
+                                    <option value="247">Color Fantasy</option>
+                                    <option value="245">Color Line</option>
+                                    <option value="164">Color Magic</option>
+                                    <option value="188">Columbus</option>
+                                    <option value="31">Columbus 2</option>
+                                    <option value="32">Corinthian</option>
+                                    <option value="207">Costa Deliziosa</option>
+                                    <option value="208">Costa Diadema</option>
+                                    <option value="209">Costa Fascinosa</option>
+                                    <option value="33">Costa Favolosa</option>
+                                    <option value="34">Costa Fortuna</option>
+                                    <option value="35">Costa Luminosa</option>
+                                    <option value="192">Costa Magica</option>
+                                    <option value="185">Costa Mediterranea</option>
+                                    <option value="205">Costa neoClassica</option>
+                                    <option value="206">Costa neoRiviera</option>
+                                    <option value="36">Costa neoRomantica</option>
+                                    <option value="37">Costa Pacifica</option>
+                                    <option value="38">Crown Princess</option>
+                                    <option value="149">Crown Seaways</option>
+                                    <option value="39">Crystal Serenity</option>
+                                    <option value="40">Crystal Symphony</option>
+                                    <option value="92">Cunard Queen Elizabeth</option>
+                                    <option value="93">Cunard Queen Mary 2</option>
+                                    <option value="94">Cunard Queen Victoria</option>
+                                    <option value="198">Deutschland</option>
+                                    <option value="246">DFDS Seaways</option>
+                                    <option value="42">Disney Magic</option>
+                                    <option value="43">Emerald Princess</option>
+                                    <option value="44">Empress</option>
+                                    <option value="45">Eurodam</option>
+                                    <option value="46">Europa</option>
+                                    <option value="47">Europa 2</option>
+                                    <option value="241">Expedition</option>
+                                    <option value="285">Express</option>
+                                    <option value="137">Finlandia</option>
+                                    <option value="154">Finnclipper</option>
+                                    <option value="166">Finneagle</option>
+                                    <option value="160">Finnfellow</option>
+                                    <option value="136">Finnlady</option>
+                                    <option value="140">Finnmaid</option>
+                                    <option value="151">Finnpartner</option>
+                                    <option value="139">Finnstar</option>
+                                    <option value="162">Finntrader</option>
+                                    <option value="48">Fram</option>
+                                    <option value="268">Freedom of the Seas</option>
+                                    <option value="135">Gabriella</option>
+                                    <option value="159">Galaxy</option>
+                                    <option value="252">Gotladia ll</option>
+                                    <option value="168">Gotland</option>
+                                    <option value="253">Gotlandia</option>
+                                    <option value="49">Grand Mistral</option>
+                                    <option value="50">Grand Princess</option>
+                                    <option value="51">Hamburg</option>
+                                    <option value="237">Hanseatic</option>
+                                    <option value="278">Hebridean Sky</option>
+                                    <option value="234">Horizon</option>
+                                    <option value="180">Independence of The Seas</option>
+                                    <option value="52">Insignia</option>
+                                    <option value="145">Isabelle</option>
+                                    <option value="53">Island Sky</option>
+                                    <option value="54">Jewel of the Seas</option>
+                                    <option value="125">Karolin</option>
+                                    <option value="55">Koningsdam</option>
+                                    <option value="56">L'Austral</option>
+                                    <option value="282">La Belle de Cadix</option>
+                                    <option value="57">Le Boreal</option>
+                                    <option value="199">Le Laperouse</option>
+                                    <option value="279">Le Lyrial</option>
+                                    <option value="277">Le Ponant</option>
+                                    <option value="176">Le Soleal</option>
+                                    <option value="58">Legend of the Seas</option>
+                                    <option value="167">Leonora Christina</option>
+                                    <option value="157">Liverpool Seaways</option>
+                                    <option value="59">Louis Aura</option>
+                                    <option value="60">Magellan</option>
+                                    <option value="270">Majestic Princess</option>
+                                    <option value="134">Marcella </option>
+                                    <option value="61">Marco Polo</option>
+                                    <option value="138">Mariella</option>
+                                    <option value="62">Marina</option>
+                                    <option value="287">MARLIN</option>
+                                    <option value="248">Megastar</option>
+                                    <option value="63">Mein Schiff 1</option>
+                                    <option value="64">Mein Schiff 2</option>
+                                    <option value="183">Mein Schiff 3</option>
+                                    <option value="65">Mein Schiff 4</option>
+                                    <option value="66">Mein Schiff 5</option>
+                                    <option value="181">Mein Schiff 6</option>
+                                    <option value="130">Merilin </option>
+                                    <option value="194">Midnatsol</option>
+                                    <option value="67">Minerva</option>
+                                    <option value="68">Monarch</option>
+                                    <option value="69">MS Deutschland</option>
+                                    <option value="70">MS Europa</option>
+                                    <option value="71">MS Europa 2</option>
+                                    <option value="227">MSC Armonia</option>
+                                    <option value="228">MSC Bellissima</option>
+                                    <option value="229">MSC Divina</option>
+                                    <option value="174">MSC Fantasia</option>
+                                    <option value="72">MSC Lirica</option>
+                                    <option value="73">MSC Magnifica</option>
+                                    <option value="235">MSC Meraviglia</option>
+                                    <option value="74">MSC Musica</option>
+                                    <option value="75">MSC Opera</option>
+                                    <option value="76">MSC Orchestra</option>
+                                    <option value="77">MSC Poesia</option>
+                                    <option value="196">MSC Preziosa</option>
+                                    <option value="231">MSC Seaside</option>
+                                    <option value="230">MSC Seaview</option>
+                                    <option value="78">MSC Sinfonia</option>
+                                    <option value="193">MSC Splendida</option>
+                                    <option value="172">National Geographic Orion</option>
+                                    <option value="79">Nautica</option>
+                                    <option value="80">Navigator of the Seas</option>
+                                    <option value="153">Nordlink</option>
+                                    <option value="236">Nordstjernen</option>
+                                    <option value="226">Norwegian Bliss</option>
+                                    <option value="225">Norwegian Breakaway</option>
+                                    <option value="224">Norwegian Dawn</option>
+                                    <option value="221">Norwegian Epic</option>
+                                    <option value="222">Norwegian Escape</option>
+                                    <option value="223">Norwegian Gem</option>
+                                    <option value="177">Norwegian Getaway</option>
+                                    <option value="186">Norwegian Jade</option>
+                                    <option value="201">Norwegian Joy</option>
+                                    <option value="256">Norwegian Spirit</option>
+                                    <option value="81">Norwegian Star</option>
+                                    <option value="82">Ocean Countess</option>
+                                    <option value="83">Ocean Dream</option>
+                                    <option value="288">Ocean Endeavour</option>
+                                    <option value="84">Ocean Majesty</option>
+                                    <option value="261">Ocean Nova</option>
+                                    <option value="85">Ocean Princess</option>
+                                    <option value="86">Oceania Marina</option>
+                                    <option value="255">Oceania Nautica</option>
+                                    <option value="258">Oceania Riviera</option>
+                                    <option value="275">Oceania Sirena</option>
+                                    <option value="11">P&O Arcadia</option>
+                                    <option value="15">P&O Aurora</option>
+                                    <option value="18">P&O Azura</option>
+                                    <option value="25">P&O Britannia</option>
+                                    <option value="195">P&O Oceana</option>
+                                    <option value="87">P&O Oriana</option>
+                                    <option value="191">P&O Ventura</option>
+                                    <option value="182">Pacific Pearl</option>
+                                    <option value="88">Pacific Princess</option>
+                                    <option value="290">Panorama</option>
+                                    <option value="289">Panorama ll</option>
+                                    <option value="254">Patria Seaways</option>
+                                    <option value="152">Pearl Seaways</option>
+                                    <option value="89">Princess Danae</option>
+                                    <option value="90">Princess Daphne</option>
+                                    <option value="91">Prinsendam</option>
+                                    <option value="95">Quest for Adventure</option>
+                                    <option value="96">Regal Princess</option>
+                                    <option value="148">Regal Star</option>
+                                    <option value="269">Rhapsody of the Seas</option>
+                                    <option value="141">Romantika</option>
+                                    <option value="158">Rosella</option>
+                                    <option value="97">Rotterdam</option>
+                                    <option value="276">Royal Clipper</option>
+                                    <option value="98">Royal Princess</option>
+                                    <option value="99">Ryndam</option>
+                                    <option value="100">Saga Pearl ll</option>
+                                    <option value="101">Saga Ruby</option>
+                                    <option value="102">Saga Sapphire</option>
+                                    <option value="286">Sailor</option>
+                                    <option value="163">Scottish Viking</option>
+                                    <option value="197">Sea Adventurer</option>
+                                    <option value="103">Sea Cloud II</option>
+                                    <option value="240">Sea Endurance</option>
+                                    <option value="104">Sea Princess</option>
+                                    <option value="143">Sea Wind</option>
+                                    <option value="220">Seabourn Encore</option>
+                                    <option value="105">Seabourn Legend</option>
+                                    <option value="218">Seabourn Odyssey</option>
+                                    <option value="219">Seabourn Ovation</option>
+                                    <option value="106">Seabourn Pride</option>
+                                    <option value="107">Seabourn Quest</option>
+                                    <option value="108">Seabourn Sojourn</option>
+                                    <option value="109">SeaDream 1</option>
+                                    <option value="217">SeaDream II</option>
+                                    <option value="110">Serenade of the Seas</option>
+                                    <option value="184">Serenissima</option>
+                                    <option value="179">Seven Seas Explorer</option>
+                                    <option value="216">Seven Seas Mariner</option>
+                                    <option value="189">Seven Seas Navigator</option>
+                                    <option value="111">Seven Seas Voyager</option>
+                                    <option value="244">Silja Europa</option>
+                                    <option value="133">Silja Serenade</option>
+                                    <option value="132">Silja Symphony</option>
+                                    <option value="112">Silver Cloud</option>
+                                    <option value="239">Silver Explorer</option>
+                                    <option value="257">Silver Muse</option>
+                                    <option value="262">Silver Spirit</option>
+                                    <option value="113">Silver Whisper</option>
+                                    <option value="114">Silver Wind</option>
+                                    <option value="233">Sovereign</option>
+                                    <option value="129">Star</option>
+                                    <option value="271">Star Breeze</option>
+                                    <option value="242">Star Legend</option>
+                                    <option value="243">Star Pride</option>
+                                    <option value="170">Stavangerfjord</option>
+                                    <option value="156">Stena Flavia</option>
+                                    <option value="283">STS Lord Nelson</option>
+                                    <option value="284">STS Tenacious</option>
+                                    <option value="249">Superfast lX</option>
+                                    <option value="251">Superfast Vll</option>
+                                    <option value="250">Superfast Vlll</option>
+                                    <option value="128">Superstar</option>
+                                    <option value="259">Tanit</option>
+                                    <option value="115">The World</option>
+                                    <option value="187">Thomson Celebration</option>
+                                    <option value="267">Thomson Dream</option>
+                                    <option value="266">Thomson Majesty</option>
+                                    <option value="116">Thomson Spirit</option>
+                                    <option value="41">TUI Discovery</option>
+                                    <option value="272">TUI Discovery 2</option>
+                                    <option value="280">Variety Voyager</option>
+                                    <option value="281">Veendam</option>
+                                    <option value="142">Victoria l</option>
+                                    <option value="146">Viking Cinderella</option>
+                                    <option value="155">Viking Grace</option>
+                                    <option value="117">Viking Sea</option>
+                                    <option value="173">Viking Sky</option>
+                                    <option value="118">Viking Star</option>
+                                    <option value="126">Viking XPRS</option>
+                                    <option value="165">Visby</option>
+                                    <option value="119">Vision of the Seas</option>
+                                    <option value="120">Voyager</option>
+                                    <option value="144">Wawel</option>
+                                    <option value="274">Westerdam</option>
+                                    <option value="264">Wind Spirit</option>
+                                    <option value="263">Wind Star</option>
+                                    <option value="121">Wind Surf</option>
+                                    <option value="232">Zenith</option>
+                                    <option value="122">Zuiderdam</option>
+                                 </select>
+                                 <i></i>
+                              </label>
+                           </section>
+                           <label class="label">Arrival</label>
+                           <div class="row">
+                              <section class="col col-6" style="padding-right:8px">
+                                 <label class="input">
+                                 <i class="icon-append fa fa-calendar"></i>
+                                 <input type="text" name="start" id="start" value="">
+                                 </label>
+                              </section>
+                              <section class="col col-6" style="padding-left:12px">
+                                 <label class="input">
+                                 <i class="icon-append fa fa-calendar"></i>
+                                 <input type="text" name="finish" id="finish">
+                                 </label>
+                              </section>
+                           </div>
+                        </fieldset>
+                        <footer>
+                           <section>
+                              <button type="submit" class="button">Search</button>
+                           </section>
+                        </footer>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="advert">
+            <div class="wrapper">
+               <div class="bigtext">
+                  <span>
+                     ADVERT
+                     <div class="advertabsolute">AT PORTCOMFORT</div>
+                  </span>
+               </div>
+               <div class="threeopt2">
+                  <div class="threeopt2_item">
+                     <div class="artext">
+                        <h2>YOUR PLACE<br>IN MAP</h2>
+                        <p>У вас есть бизнес в одном из портов мира или рядом с ним?<br>Давайте разместим информацию о нём на нашей карте и туристы будут заранее планировать посещение вашей точки.</p>
+                        <div class="artbutton"><a href="#">GET TRIAL</a></div>
+                     </div>
+                  </div>
+                  <div class="threeopt2_item">
+                     <div class="artext">
+                        <h2>BANNER<br>IN YOUR PORT<br>OR LINER</h2>
+                        <p>Зачем платить лишнее?<br>Мы за оптимизацию рекламных бюджетов!<br>Ваш банер будет появляться только тогда, когда посетитель зайдёт на страничку вашего порта или корабля.</p>
+                        <div class="artbutton"><a href="#">GET TRIAL</a></div>
+                     </div>
+                  </div>
+                  <div class="threeopt2_item">
+                     <div class="artext">
+                        <h2>SEND A MAIL<br>TO MANAGER</h2>
+                        <p>У вас есть желание разместить рекламу на нашем сайте, но ни один из предложенных вариантов вам не подходит? Мы с удовольствием рассмотрим все варианты!</p>
+                        <div class="artbutton"><a href="#">GET TRIAL</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="keepintouch">
+            <div class="wrapper">
+               <div class="clearfix">
+                  <div class="bigtext">
+                     <span>
+                        KEEP
+                        <div class="keepintouchabsolute"></div>
+                     </span>
+                  </div>
+                  <div class="artext">
+                     <h2>IN TOUCH<br>WITH OUR UPDATES</h2>
+                     <p>Now you allways know when <br>and whith quay your liner will arrive</p>
+                     <p>Ports and terminals play a vital role in the transportation of global trade and therefore for shipping companies it is important to know what a port can offer them in terms of facilities available for loading and unloading cargo, as well as what the vessel and its crew have available to them in terms of services.</p>
+                     <div class="artbutton"><a href="#">SUBSCRIBE</a></div>
+                  </div>
+               </div>
+               <div class="socialicons">
+                  <a href="#" class="socialicon1"></a>
+                  <a href="#" class="socialicon2"></a>
+                  <a href="#" class="socialicon3"></a>
+                  <a href="#" class="socialicon4"></a>
+                  <a href="#" class="socialicon5"></a>
+                  <a href="#" class="socialicon6"></a>
+                  <a href="#" class="socialicon7"></a>
+                  <a href="#" class="socialicon8"></a>
+               </div>
+            </div>
+         </div>
+         <footer>
+            <div class="realfooter">
+               <div class="wrapper clearfix">
+                  <div class="floatleft leftfoot">
+                     <ul>
+                        <li><a href="#">Find a quay</a></li>
+                        <li><a href="#">See arriving date (time) and standing time</a></li>
+                        <li><a href="#">Ship entry’s history</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="#">Ship’s path</a></li>
+                        <li><a href="#">Ship’s info</a></li>
+                        <li><a href="#">Terminal’s plans</a></li>
+                        <li><a href="#">Call a taxi</a></li>
+                        <li><a href="#">Rent a car</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="#">How does it work</a></li>
+                        <li><a href="#">Mail to us</a></li>
+                        <li><a href="#">Report about errors</a></li>
+                        <li><a href="#">Ad in PORTCOMFORT</a></li>
+                        <li><a href="#">Subscribe</a></li>
+                     </ul>
+                  </div>
+                  <div class="floatright rightfoot">
+                     <ul>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">License</a></li>
+                     </ul>
+                     <p>Design by <br><a href="#">ADEQUATE PEOPLE</a><span class="adequatepeople"></span></p>
+                  </div>
+                  <div class="justaship"></div>
+               </div>
+            </div>
+         </footer>
+      </div>
+      <script src="js/script.js"></script>
+   </body>
+</html>

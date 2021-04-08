@@ -1,0 +1,625 @@
+@font-face{
+    font-family: 'CRC15';
+    src: url('../fonts/CRC15.otf');
+}
+@font-face{
+    font-family: 'CRC25';
+    src: url('../fonts/CRC25.otf');
+}
+@font-face{
+    font-family: 'CRC35';
+    src: url('../fonts/CRC35.otf');
+}
+@font-face{
+    font-family: 'CRC55';
+    src: url('../fonts/CRC55.otf');
+}
+@font-face{
+    font-family: 'CRC65';
+    src: url('../fonts/CRC65.otf');
+}
+@font-face{
+    font-family: 'CRC75';
+    src: url('../fonts/CRC75.otf');
+}
+body,html{height:100%;}
+body{background:#e0e0e0;margin:0;padding:0;}
+
+
+a{
+  text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+.s-panel{
+    background: #00006d;
+    width: 300px;
+    height: 100%;
+    /* padding-top: 30px; */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+		z-index: 10;
+}
+.s-panel.hidden{left:-290px;}
+.s-panel .logo{
+    width: 53px;
+    height: 83px;
+    background: url(../img/svg/logo_white.svg) center center;
+    margin: 30px auto;
+}
+.s-panel .form{
+    /* margin-top: 70px; */
+    position: relative;
+}
+.s-panel-button {
+    width: 32px;
+    height: 166px;
+    background: url(../img/s-panel-button.png) no-repeat;
+    position: absolute;
+    left: 300px;
+    top: 80px;
+    cursor: pointer;
+
+}
+.s-panel-button button{
+    cursor:pointer;
+    background: url(../img/svg/magnifier.svg) center center no-repeat;
+    width:27px;
+    height:27px;
+    border:none;
+    margin-top: 66px;
+}
+.menu{
+    /* margin-top: 38px; */
+    width: 100%;
+}
+.menu-col{width:25%;display:inline-block;}
+.menu .logo{
+    width: 93px;
+    height: 144px;
+    background: url('../img/svg/logoblue.svg') no-repeat center;
+    margin: 0 auto;
+}
+.waves{height:640px;width:100%;background: url(../img/waves_01.png) center center;position: absolute; z-index: 1;top: 800px;}
+.waves2{height:640px;width:100%;background: url(../img/svg/WAVE_05.svg) top center;position: absolute; z-index: 3;bottom: -350px;}
+.find-berth span{
+    position: relative;
+    display: inline-block;
+		z-index: 3;
+		/*top: 100px;/*сделал*/
+}
+.swimmingship{
+    display: block;
+    background: url(../img/Ship_02.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    margin-left:-200px;
+    z-index: 3;
+    width: 400px;
+    height: 996px;
+}
+.find-berth, .map{bottom: -250px;text-align: center;font-family: CRC75;color:#00006d;position: relative;    min-height: 586px;}
+.bigtext{
+	font-size:386px;
+	color:#00006d;
+	text-align: center;
+	font-family: CRC75;
+
+}
+.wrapper{width:1600px;margin:0 auto;}
+
+
+
+
+
+
+/**/
+
+*{
+    box-sizing: border-box;
+}
+.wrap{
+    margin: 0 auto;
+		width: 1600px;
+}
+.floatleft{
+    float: left;
+}
+.floatright{
+    float: right;
+}
+.clearfix::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.menu .wrapper{
+	margin-top: 40px;
+	height: 150px;
+	display: flex;
+	justify-content: space-around;
+}
+.menu_item{
+	display: flex;
+} 
+.menu_item a{
+	font: 400 18px/32px "Circle";
+	color: #858585;
+	text-decoration: none;
+}
+.menu_item a:hover{
+	color: #2a556b;
+}
+.menu_item ul{
+	margin-top: 0;
+	padding-left: 16px;
+	color: #858585;
+	list-style-type: none;
+	
+}
+.menu_item1{
+
+
+}
+.menu_item2{
+	margin-left: -77px;
+}
+.menu_item2 img{
+  width: 100px;
+}
+.svgimg{
+	width: 39px;
+	height: 135px;
+	background: url(../img/SVG/portcomfort.SVG) center center;
+}
+.svgimg2{
+	background: url(../img/SVG/additionalservices.SVG) center center;
+}
+.svgimg3{
+	background: url(../img/SVG/aboutus.SVG) center center;
+}
+.find{
+	margin-top: 223px; 
+	height: 280px;
+	background: url(../img/SVG/find.SVG) center center no-repeat;
+}
+.map{
+	min-height: 2000px;
+	background: url(../img/Home_1600bg.jpg);
+	padding-top: 470px;
+}
+/**/
+.swimmingship2{
+	display: block;
+	width: 1500px;
+	height: 350px;
+  background: url(../img/png/LeB.png);
+  background-repeat:no-repeat;
+  background-size: cover;
+  position: absolute;
+  left:-160%;
+  top: 751px;
+  z-index: 3;
+}
+.artext{
+	position: relative;
+	text-align: left;
+	margin: 0 auto;
+	width: 561px;
+	height: 500px;
+	color: #00007f;
+}
+.artext h2{
+	font: 300 48px/52px 'CRC35';
+}
+.artext p{
+	width: 432px;
+	font: 300 18px/22px 'CRC35';
+}
+.anchordecorate{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	background: url(../img/anchor.png) no-repeat center center;
+  top: 94px;
+  left: -300px;
+}
+.artbutton{
+	width: 188px;
+	height: 50px;
+	border-width: 1px;
+	border-style: solid;
+	margin-top: 60px;
+	text-align: center;
+	font: 400 20px/50px 'CRC35';
+}
+.watchbig{
+	position: relative;
+	margin-top: 0px;
+}
+.waves2 .wrapper{
+	position: relative;
+	padding-top: 100px;
+	display: flex; justify-content: space-around; flex-direction: row;
+}
+
+.waves2 .wrapper .artext{
+	color: white;
+}
+.selectship{
+	width: 660px;
+	height: 230px;
+	background: url(../img/svg/SELECT_wave.svg) center center;
+	position: absolute;
+	bottom: -110px;
+	left: 50%;
+	margin-left: -330px;
+}
+.port-form2{
+
+	margin: 70px auto;
+	width: 318px;
+}
+
+.port-form2 .select select{
+	padding-left: 101px;
+	border-width: 1px;
+}
+.port-form .select i.ifirst{
+	left: 4px;
+}
+.searchsel .wrapper{
+	padding-top: 200px;
+	display: flex;
+	justify-content: space-between;
+}
+.middletext{
+	color: #2a556b;
+}
+h2.middletext{
+	margin-top: 0;
+	margin-bottom: 0;
+	font:300 184px/168px 'CRC75';
+}
+span.middletext {
+	font:300 59px/60px 'CRC35';
+}
+.searchsel .artext{
+	color: #2a556b;
+}
+.swimmingship3{
+    display: block;
+    background: url(../img/png/Funnel_2.png);
+    background-repeat:no-repeat;
+    position: absolute;
+    left: -149%;
+    top: -284px;
+    margin-left:-200px;
+    z-index: 3;
+    width: 731px;
+    height: 659px;
+}
+.knowtaxi{
+	position: relative;
+	min-height: 2018px;
+	background: url(../img/Home_1600-bg2.jpg);
+	background-size: cover;
+	margin-top: 581px;
+	padding-bottom: 240px;
+}
+.knowtaxi .bigtext{
+	padding-left: 700px;
+  transform: rotate(90deg);
+  padding-left: 578px;
+  padding-top: 60px;
+}
+.flyingipad{
+	  display: block;
+    background: url(../img/png/iPad.png);
+    background-repeat:no-repeat;
+    position: absolute;
+    left: 73%;
+    top: 333px;
+    margin-left:-200px;
+    z-index: 3;
+    height: 847px;
+    width: 506px;
+}
+.knowtaxi .artext{
+    margin-top: -278px;
+    margin-right: 62px;
+}
+.calltaxi{
+	display: flex;
+   margin-top: 900px;
+}
+.calltaxi h2.middletext{
+  margin-left: -51px;
+}
+.taxiphoto{
+	display: block;
+	position: absolute;
+  top: -44px;
+  left: -324px;
+	width: 273px;
+	height: 594px;
+	background: url(../img/png/Minibus.png);
+}
+.selectship2{
+	background: url(../img/svg/SELECT_PORT_WAVE.svg) no-repeat center center;
+  height: 307px;
+  bottom: -149px;
+}
+.artextcustom p{
+	color: #2a556b;
+}
+.howletsuseit{
+	height: 2391px;
+	background: #8cd0f8;
+	background: url(../img/howdowsit.jpg) repeat-x center;
+}
+
+.howletsuseit .wrapper{
+	height: 2391px;
+
+}
+.doesitwork{
+	position: relative;
+	font: 300 48px/52px CRC35;
+	text-align: center;
+    padding-top: 523px;
+    padding-right: 184px;
+		color: #00007f;
+}
+.anchordecorate2{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	background: url(../img/svg/BLUE_Ancor.svg) no-repeat center center;
+  top: 301px;
+    left: 685px;
+
+}
+.threeoptions{
+	margin-top: 100px;
+	min-height: 450px;
+	display: flex;
+	justify-content: center;
+	background: url(../img/threepoints.png) no-repeat top center;
+	padding-top: 277px;
+	font: 300 18px/22px CRC35; 
+	color: white;
+
+}
+.threeoptions_item{
+	width: 330px;
+}
+.threeoptions_item.item2{
+  margin: 0 140px 0 141px;
+}
+.arrival{
+	width: 714px;
+	height: 348px;
+	background: url(../img/svg/GREEN_PLANK.svg) center center;
+	margin: 272px auto;
+}
+.arrival{
+	display: flex;
+}
+.arrival_item{
+	width: 50%;
+}
+
+.arrival_item:first-child{
+	background: url(../img/svg/logo_white.svg) center center;
+}
+.arrival_item:last-child select, .arrival_item:last-child input{
+  border-width: 1px;
+}
+
+.arrival_item:last-child form{
+
+	margin: 0 auto;	
+	margin-top: 50px;
+  width: 300px;
+}
+.advert{
+	position: relative;
+	top: -50px;
+	min-height: 1000px;
+  background: url(../img/bg245.png) repeat-x;
+	z-index: 1;
+}
+.advert .bigtext{
+	margin: 0 auto;
+	color: white;
+	position: absolute;
+	top: -250px;
+	font-size: 360px;
+	text-align: center;
+	padding-left: 64px;
+}
+.advertabsolute{
+	position: absolute;
+	bottom: 73px;
+  right: -92px;
+	font: 300 48px/52px CRC35;
+}
+.threeopt2{
+	padding-top: 290px;
+	display: flex;
+    justify-content: space-around;
+
+}
+.threeopt2 .artext{
+  color: white;
+	width: 300px;
+}
+.keepintouch{
+	padding-top: 286px;
+	position: relative;
+	top: -100px;
+	background: url(../img/Home_1600bg.jpg);
+	background-size: cover;
+	min-height: 1280px;
+
+}
+.keepintouch .bigtext{
+	position: relative;
+	line-height: 290px;
+}
+.keepintouchabsolute{
+	display: block;
+	position: absolute;
+	width: 353px;
+	height: 580px;
+	background: url(../img/png/bell.png);
+    top: 71px;
+    left: 146px;
+}
+.keepintouch .artext{
+  float: right;
+  margin-right: 262px;
+
+}
+.keepintouch .artext .artbutton{
+    margin-top: 33px;
+
+}
+.socialicons{
+	display: flex;
+	float: right;
+  margin-right: 413px;
+	margin-top: 36px;
+	text-align: right;
+	justify-content: end;
+	
+}
+.socialicons a{
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+.socialicon1{
+	background: url(../img/svg/SOCIAL_g-plus.svg) no-repeat center center;
+}
+.socialicon2{
+	background: url(../img/svg/SOCIAL_fb.svg) no-repeat center center;
+}
+.socialicon3{
+	background: url(../img/svg/SOCIAL_twi.svg) no-repeat center center;
+}
+.socialicon4{
+	background: url(../img/svg/SOCIAL_pin.svg) no-repeat center center;
+}
+.socialicon5{
+	background: url(../img/svg/SOCIAL_insta.svg) no-repeat center center;
+}
+.socialicon6{
+	background: url(../img/svg/SOCIAL_youtube.svg) no-repeat center center;
+}
+.socialicon7{
+	background: url(../img/svg/SOCIAL_VIM.svg) no-repeat center center;
+}
+.socialicon8{
+	background: url(../img/svg/SOCIAL_be.svg) no-repeat center center;
+}
+footer{
+	min-height: 200px;
+	position: relative;
+}
+
+.realfooter{
+
+	height: 535px;
+	position: absolute;
+	top: -161px;
+	width: 100%;
+	background: url(../img/svg/WAVE_05.svg) repeat-x;
+	
+}
+.realfooter ul{
+	list-style-type: none;
+	color: white;
+	font: 400 14px/18px 'CRC55';
+}
+.realfooter p{
+	color: white;
+	font: 400 14px/18px 'CRC55';
+	margin-top: 20px;
+}
+.realfooter .wrapper{
+	position: relative;
+	padding: 122px 161px;
+}
+.justaship{
+	position: absolute;
+	display: block;
+	width: 731px;
+	height: 619px;
+	background: url(../img/png/Funnel_3.png);
+  bottom: -9px;
+  right: 221px;
+}
+.rightfoot{
+	position: relative;
+	z-index: 3;
+}
+.rightfoot ul{
+	padding-left: 0;
+}
+.adequatepeople{
+	display: block;
+	position: absolute;
+  top: 63px;
+  left: -51px;
+	width: 45px;
+	height: 45px;
+	background: url(../img/svg/FITULKA.svg) center center no-repeat;
+	background-size: 308%;
+}
+
+
+
+
+@media only screen and (max-width:1366px) {
+	.wrapper{width:1326px;}
+    .find-berth{font-size:320px;bottom: -210px;}
+    .find-berth span:after{top: -50px;width: 300px;height: 747px;margin-left:-150px;}
+    
+}
+@media only screen and (max-width:1280px) {
+    .wrapper{width:1240px;}
+    .waves .ship{margin-left: 344px;}
+    .find-berth span:after{top: -55px;width: 300px;height: 747px;margin-left:-150px;}
+    .find-berth{
+    font-size: 296px;
+    bottom: -200px;
+}
+}
+@media only screen and (max-width:1024px) {
+    .wrapper{width:984px;}
+    .waves .ship{margin-left: 344px;}
+    .find-berth span:after{top: -75px;width: 300px;height: 747px;margin-left:-150px;}
+    .find-berth{font-size:230px;bottom: -150px;}
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+    .find-berth span:after{
+        background: url(../img/Ship_02@2x.png);
+        background-size: cover;
+    }
+}
